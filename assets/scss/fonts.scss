@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Archer';
+	src: url('~static/fonts/ArcherDisplay-Regular.otf') format('opentype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@mixin regular-archer {
+	font-family: 'Archer', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
