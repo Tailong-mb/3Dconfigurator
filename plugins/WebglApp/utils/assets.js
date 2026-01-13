@@ -4,7 +4,14 @@ import water from '~/static/textures/water.jpg';
 const assetManager = new LoaderManager();
 
 export async function loadAssets() {
-	await assetManager.load([{ name: 'water', texture: water }]);
+	// Les fichiers dans public/ sont servis depuis la racine
+	// Pas besoin de baseUrl, le chemin relatif fonctionne
+	const shoeModelPath = '/models/air_jordan_1.glb';
+
+	await assetManager.load([
+		{ name: 'water', texture: water },
+		{ name: 'shoe', gltf: shoeModelPath },
+	]);
 
 	return assetManager.assets;
 }

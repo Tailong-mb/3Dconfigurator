@@ -37,6 +37,6 @@ canvas {
 #container {
 	height: 100vh;
 	width: 100vw;
-	background: #ccc;
+	background: #ffffff;
 }
 </style>

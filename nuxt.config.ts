@@ -17,6 +17,11 @@ export default defineNuxtConfig({
 
 	vite: {
 		plugins: [glsl()],
+		server: {
+			fs: {
+				allow: ['..'],
+			},
+		},
 		build: {
 			rollupOptions: {
 				onwarn(warning: any, warn: any) {

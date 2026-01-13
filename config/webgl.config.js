@@ -17,6 +17,8 @@ export const WEBGL_CONFIG = {
 	controls: {
 		enableDamping: true,
 		dampingFactor: 0.05,
+		minDistance: 50, // Distance minimale de zoom (ne peut pas zoomer trop près)
+		maxDistance: 75, // Distance maximale de zoom (ne peut pas dézoomer trop loin)
 	},
 	debug: {
 		enabled: false,
